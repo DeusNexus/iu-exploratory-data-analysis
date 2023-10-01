@@ -34,9 +34,6 @@ A prevailing global trend since 1961 has been a consistent reduction in rural po
 # Interactive Geo-spatial Data Visualization Example
 Live Demo
 ![Interactive Geo-spatial Visualization Demo](./images/dashboard_demo.gif)
-![Hover over Bar chart](/images/dashboard_bar_hover.png)
-![Hover over Boxplot](/images/dashboard_box_hover.png)
-![Hover over Histogram](/images/dash_hist_hover.png)
 
 # Reflection
 Our work with interactive geo-spatial data compellingly underscores the potency of a single visualization. Traditional tabular formats and static charts often obfuscate the geographical context, depriving the viewer of crucial insights tied to geographic location. Interactive elements not only invite users to explore their questions but also unearth novel perspectives. Throughout this project, our design choices were meticulously considered to maintain clarity and conciseness. For instance, color was judiciously employed to enhance comprehension, with the gradient scale in the chloropleth map facilitating percentage visualization and catering to individuals with color vision impairments. The boxplot utilized color for differentiation, augmented by continent labels. Meanwhile, the bar chart accentuated individual countries upon hover, amplifying the distinct trends present.
