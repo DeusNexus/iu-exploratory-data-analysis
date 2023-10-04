@@ -807,4 +807,4 @@ def update_animation_interval(speed_value):
 # Display the app within the Jupyter Notebook cell
 # display(HTML("<style>.container { width:100% !important; font-family: Ubuntu;}</style>"))
 if __name__ == '__main__':
-    app.run_server(port=8050,debug=True)
+    app.run(debug=True, host='0.0.0.0', port='80')
