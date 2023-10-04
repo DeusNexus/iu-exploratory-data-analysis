@@ -210,6 +210,7 @@ max_year = max(years)  # Find the maximum year
 
 # Create a Dash web application
 app = dash.Dash(__name__)
+server = app.server
 
 # Assuming you have a DataFrame 'df' and you want to filter it
 # to only include rows where 'Indicator Code' is 'SP.RUR.TOTL.ZS'
