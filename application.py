@@ -248,7 +248,7 @@ app.layout = html.Div(
         html.Div(id='selected-year', style={'display': 'none'}),
         html.Div(id='hovered-country', style={'display': 'none'}),
         ######### App content #########
-        # Contains the title and some info
+        # Contains the title and some infoSS
         html.Div(
             id='header-container',
             style={
@@ -258,7 +258,7 @@ app.layout = html.Div(
                 "height": "8%",
                 "box-sizing": "border-box",
                 "display": "flex",
-                "flex-direction": "column",
+                "flex-direction": "row",
                 "align-items": "center",
                 "justify-content": "center",
             },
@@ -267,12 +267,29 @@ app.layout = html.Div(
                     id='title-container',
                     style={
                         "backgroundColor": "black",
-                        "flex": "1",
+                        "flex": "2",
                         "margin": "2px 0",
                     },
                     children=[
                         html.H1("Interactive Geo Data Visualization", style={'text-align': 'center','color':'white'}),
                         html.H4("WorldBank Dataset: Agriculture & Rural Development ", style={'text-align': 'center','color':'white'}),
+                    ]
+                ),
+                html.Div(
+                    id='info-container',
+                    style={
+                        "backgroundColor": "black",
+                        "flex": "1",
+                        "flex-direction":"column",
+                        "justify-content":"center",
+                        "align-items":"center",
+                        "font-weight": "bold",
+                        "font-size":"12px",
+                    },
+                    children=[
+                        html.P("Animation playback speed can be adjusted, slow connection or pc it is advised to use above 500ms refresh rate.", style={'text-align': 'right','color':'white'}),
+                        html.P("Hovering over the boxplot will show the countries of a continent. Hover over World to see all countries again.", style={'text-align': 'right','color':'white'}),
+                        html.P("Hovering over the choropleth will show the country in the barplot and highlight it's position in the histogram.", style={'text-align': 'right','color':'white'}),
                     ]
                 ),
             ]
@@ -532,9 +549,9 @@ app.layout = html.Div(
                             dcc.Slider(
                                 id='speed-slider',
                                 min=50,  # Minimum interval value in milliseconds
-                                max=500,  # Maximum interval value in milliseconds
+                                max=800,  # Maximum interval value in milliseconds
                                 step=50,  # Step size for the slider
-                                value=200,  # Initial value of the interval in milliseconds
+                                value=500,  # Initial value of the interval in milliseconds
                             ),
                         ]),
                     ]
