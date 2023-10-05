@@ -48,7 +48,8 @@ Now the dashboard should be running on `localhost:8050`
 
 # Building your own Docker image
 1. Clone the repository and `cd` into it.
-2. `sudo docker build -t dash-azure .` # This will use the Dockerfile to build the image
+2. Make any changes in application.py and Dockerfile
+3. `sudo docker build -t your-dashboard-image .` # This will use the Dockerfile to build the image
 
 # Disclaimer
 The application developed within this project is licensed under the GNU General Public License (GPL).
