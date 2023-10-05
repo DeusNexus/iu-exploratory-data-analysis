@@ -42,9 +42,9 @@ Our work with interactive geo-spatial data compellingly underscores the potency 
 This project serves as a testament to the profound impact of design principles encompassing clarity, color utilization, interactivity, and the insights that emerge from geo-spatial data exploration. Through this undertaking, we have unraveled the nuanced complexities of geolocation and rural population percentages.
 
 # Running the dashboard locally - Best for latency (advised)
-`docker pull deusnexus/dash-azure:latest`
-`sudo docker run -p 8050:80 deusnexus/dash-azure:latest`
-Now the dashboard should be running on `localhost:8050`
+1. `docker pull deusnexus/dash-azure:latest`
+2. `sudo docker run -p 8050:80 deusnexus/dash-azure:latest`
+3. Now the dashboard should be running on `localhost:8050`
 
 # Building your own Docker image
 1. Clone the repository and `cd` into it.
