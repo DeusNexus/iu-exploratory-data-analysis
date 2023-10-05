@@ -46,7 +46,9 @@ This project serves as a testament to the profound impact of design principles e
 
 # AWS Hosted Dashboard
 The server is hosted in Frankfurt (EU) so depending on your location there can be lagg in updating the figures.
+
 You can adjust the fresh rate above 500 ms to slow down the updates and give it time to properly refresh.
+
 Link (Last updated on 5/10/2023): http://ec2-3-79-241-13.eu-central-1.compute.amazonaws.com/
 
 # Running the dashboard locally - Best for latency (advised)
