@@ -210,7 +210,6 @@ max_year = max(years)  # Find the maximum year
 
 # Create a Dash web application
 app = dash.Dash(__name__)
-server = app.server
 
 # Assuming you have a DataFrame 'df' and you want to filter it
 # to only include rows where 'Indicator Code' is 'SP.RUR.TOTL.ZS'
@@ -416,10 +415,10 @@ app.layout = html.Div(
                                     figure=px.box(
                                         pd.concat([df_world,df_rural]),
                                         x="Continent", 
-                                        y=str(1961),
+                                        y=str(1960),
                                         color='Continent',
                                         category_orders={"Continent": median_values},  # Order by descending medians
-                                        title=f'Box Plot of Rural Percentage (1961)',
+                                        title=f'Box Plot of Rural Percentage (1960)',
                                     ).update_layout(
                                         title={'x': 0.5},
                                         dragmode=False,
@@ -450,7 +449,7 @@ app.layout = html.Div(
                                     figure=go.Figure(
                                         data=[
                                             go.Histogram(
-                                                x=df_rural[str(1961)],
+                                                x=df_rural[str(1960)],
                                                 nbinsx=20,
                                                 xbins=dict(
                                                     start=0,
@@ -463,7 +462,7 @@ app.layout = html.Div(
                                             ),
                                         ],
                                         layout=dict(
-                                            title=f'Histogram Bins of Rural Percentage Globally (1961)',
+                                            title=f'Histogram Bins of Rural Percentage Globally (1960)',
                                             xaxis_title="Percentage Range Bins",
                                             yaxis_title="Number of Countries",
                                             yaxis=dict(range=[0, 30]),  # Set the y-axis range to [0, 30]
