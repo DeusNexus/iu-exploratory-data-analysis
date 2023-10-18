@@ -49,7 +49,7 @@ The server is hosted in Frankfurt (EU) so depending on your location there can b
 
 You can adjust the fresh rate above 500 ms to slow down the updates and give it time to properly refresh.
 
-Link (Last updated on 5/10/2023): http://ec2-3-79-241-13.eu-central-1.compute.amazonaws.com/
+Link (Last updated on 18/10/2023): http://ec2-18-184-158-36.eu-central-1.compute.amazonaws.com
 
 # Running the dashboard locally - Best for latency (advised)
 1. `docker pull deusnexus/dash-azure:latest`
